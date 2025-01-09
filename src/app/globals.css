@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #171717;
+}
+
+body {
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@layer components {
+  .input-box::placeholder {
+    @apply text-white !important;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
